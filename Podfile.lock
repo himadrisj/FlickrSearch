@@ -1,0 +1,20 @@
+PODS:
+  - BNRCoreDataStack (2.1.0)
+  - ObjectMapper (2.2.7)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+
+DEPENDENCIES:
+  - BNRCoreDataStack (= 2.1.0)
+  - ObjectMapper
+  - SDWebImage
+
+SPEC CHECKSUMS:
+  BNRCoreDataStack: 4b7f6f89bbb715a21e334e626eadc62f6f9389eb
+  ObjectMapper: 65abcfd9a61cf7396cbd14a4fb22fddfcc46577e
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+
+PODFILE CHECKSUM: cf82166f102e2908f5ccee53b8d80eb75d49bc35
+
+COCOAPODS: 1.2.1
