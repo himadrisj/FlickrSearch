@@ -25,6 +25,7 @@
 		E5EE35391EF42CFD000B190A /* GetImageListRequestModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE35381EF42CFD000B190A /* GetImageListRequestModels.swift */; };
 		E5EE353B1EF459FA000B190A /* JsonParsingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE353A1EF459FA000B190A /* JsonParsingTests.swift */; };
 		E5EE353D1EF45A4D000B190A /* ImageSearchResult.json in Resources */ = {isa = PBXBuildFile; fileRef = E5EE353C1EF45A4D000B190A /* ImageSearchResult.json */; };
+		E5EE353F1EF45F46000B190A /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE353E1EF45F46000B190A /* NetworkTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		E5EE35381EF42CFD000B190A /* GetImageListRequestModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetImageListRequestModels.swift; sourceTree = "<group>"; };
 		E5EE353A1EF459FA000B190A /* JsonParsingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonParsingTests.swift; sourceTree = "<group>"; };
 		E5EE353C1EF45A4D000B190A /* ImageSearchResult.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ImageSearchResult.json; sourceTree = "<group>"; };
+		E5EE353E1EF45F46000B190A /* NetworkTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTests.swift; sourceTree = "<group>"; };
 		E8C6CE129E5E9814A961AABB /* Pods-FlickrSearchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickrSearchUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlickrSearchUITests/Pods-FlickrSearchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EB874EAE8AAB63A5385C4124 /* Pods_FlickrSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlickrSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F680A9DF391C53404614C15D /* Pods-FlickrSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickrSearchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlickrSearchTests/Pods-FlickrSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				E5EE353A1EF459FA000B190A /* JsonParsingTests.swift */,
 				E5EE353C1EF45A4D000B190A /* ImageSearchResult.json */,
 				E5EE35131EF41C36000B190A /* Info.plist */,
+				E5EE353E1EF45F46000B190A /* NetworkTests.swift */,
 			);
 			path = FlickrSearchTests;
 			sourceTree = "<group>";
@@ -507,6 +510,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5EE353F1EF45F46000B190A /* NetworkTests.swift in Sources */,
 				E5EE353B1EF459FA000B190A /* JsonParsingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
