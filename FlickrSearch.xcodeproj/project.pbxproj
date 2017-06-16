@@ -26,6 +26,12 @@
 		E5EE353B1EF459FA000B190A /* JsonParsingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE353A1EF459FA000B190A /* JsonParsingTests.swift */; };
 		E5EE353D1EF45A4D000B190A /* ImageSearchResult.json in Resources */ = {isa = PBXBuildFile; fileRef = E5EE353C1EF45A4D000B190A /* ImageSearchResult.json */; };
 		E5EE353F1EF45F46000B190A /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE353E1EF45F46000B190A /* NetworkTests.swift */; };
+		E5EE354C1EF46145000B190A /* RecentSearch+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE35441EF46145000B190A /* RecentSearch+CoreDataClass.swift */; };
+		E5EE354D1EF46145000B190A /* RecentSearch+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE35451EF46145000B190A /* RecentSearch+CoreDataProperties.swift */; };
+		E5EE354E1EF46145000B190A /* SearchData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE35461EF46145000B190A /* SearchData+CoreDataClass.swift */; };
+		E5EE354F1EF46145000B190A /* SearchData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE35471EF46145000B190A /* SearchData+CoreDataProperties.swift */; };
+		E5EE35501EF46145000B190A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E5EE35491EF46145000B190A /* Model.xcdatamodeld */; };
+		E5EE35531EF461F8000B190A /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE35521EF461F8000B190A /* UIConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +80,12 @@
 		E5EE353A1EF459FA000B190A /* JsonParsingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonParsingTests.swift; sourceTree = "<group>"; };
 		E5EE353C1EF45A4D000B190A /* ImageSearchResult.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ImageSearchResult.json; sourceTree = "<group>"; };
 		E5EE353E1EF45F46000B190A /* NetworkTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTests.swift; sourceTree = "<group>"; };
+		E5EE35441EF46145000B190A /* RecentSearch+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RecentSearch+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E5EE35451EF46145000B190A /* RecentSearch+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RecentSearch+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E5EE35461EF46145000B190A /* SearchData+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SearchData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E5EE35471EF46145000B190A /* SearchData+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SearchData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E5EE354A1EF46145000B190A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		E5EE35521EF461F8000B190A /* UIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
 		E8C6CE129E5E9814A961AABB /* Pods-FlickrSearchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickrSearchUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlickrSearchUITests/Pods-FlickrSearchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EB874EAE8AAB63A5385C4124 /* Pods_FlickrSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlickrSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F680A9DF391C53404614C15D /* Pods-FlickrSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickrSearchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlickrSearchTests/Pods-FlickrSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -155,6 +167,8 @@
 		E5EE34FB1EF41C36000B190A /* FlickrSearch */ = {
 			isa = PBXGroup;
 			children = (
+				E5EE35511EF461E2000B190A /* UI */,
+				E5EE35401EF460FC000B190A /* CoreData */,
 				E5EE352A1EF42B49000B190A /* NetworkLayer */,
 				E5EE34FC1EF41C36000B190A /* AppDelegate.swift */,
 				E5EE34FE1EF41C36000B190A /* ViewController.swift */,
@@ -206,6 +220,51 @@
 				E5EE35381EF42CFD000B190A /* GetImageListRequestModels.swift */,
 			);
 			path = ApiModel;
+			sourceTree = "<group>";
+		};
+		E5EE35401EF460FC000B190A /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				E5EE35421EF46145000B190A /* Models */,
+			);
+			name = CoreData;
+			path = FlickrSearch/CoreData;
+			sourceTree = SOURCE_ROOT;
+		};
+		E5EE35421EF46145000B190A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E5EE35431EF46145000B190A /* Classes */,
+				E5EE35481EF46145000B190A /* Schema */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E5EE35431EF46145000B190A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E5EE35441EF46145000B190A /* RecentSearch+CoreDataClass.swift */,
+				E5EE35451EF46145000B190A /* RecentSearch+CoreDataProperties.swift */,
+				E5EE35461EF46145000B190A /* SearchData+CoreDataClass.swift */,
+				E5EE35471EF46145000B190A /* SearchData+CoreDataProperties.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E5EE35481EF46145000B190A /* Schema */ = {
+			isa = PBXGroup;
+			children = (
+				E5EE35491EF46145000B190A /* Model.xcdatamodeld */,
+			);
+			path = Schema;
+			sourceTree = "<group>";
+		};
+		E5EE35511EF461E2000B190A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E5EE35521EF461F8000B190A /* UIConstants.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -495,13 +554,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5EE352E1EF42BF3000B190A /* NetworkConstants.swift in Sources */,
+				E5EE35501EF46145000B190A /* Model.xcdatamodeld in Sources */,
 				E5EE34FF1EF41C36000B190A /* ViewController.swift in Sources */,
+				E5EE354E1EF46145000B190A /* SearchData+CoreDataClass.swift in Sources */,
 				E5EE35371EF42CDB000B190A /* FlickrService.swift in Sources */,
+				E5EE354F1EF46145000B190A /* SearchData+CoreDataProperties.swift in Sources */,
+				E5EE35531EF461F8000B190A /* UIConstants.swift in Sources */,
 				E5EE35391EF42CFD000B190A /* GetImageListRequestModels.swift in Sources */,
 				E5EE35301EF42C2D000B190A /* StrictMappable.swift in Sources */,
 				E5EE34FD1EF41C36000B190A /* AppDelegate.swift in Sources */,
 				E5EE35351EF42CA7000B190A /* RequestManager.swift in Sources */,
+				E5EE354C1EF46145000B190A /* RecentSearch+CoreDataClass.swift in Sources */,
 				E5EE352C1EF42BA7000B190A /* NetworkLayerProtocols.swift in Sources */,
+				E5EE354D1EF46145000B190A /* RecentSearch+CoreDataProperties.swift in Sources */,
 				E5EE35321EF42C60000B190A /* GenericResponseHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -658,6 +723,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9GW78CXC2W;
 				INFOPLIST_FILE = FlickrSearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.himadrisj.FlickrSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -672,6 +738,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9GW78CXC2W;
 				INFOPLIST_FILE = FlickrSearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.himadrisj.FlickrSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -784,6 +851,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E5EE35491EF46145000B190A /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E5EE354A1EF46145000B190A /* Model.xcdatamodel */,
+			);
+			currentVersion = E5EE354A1EF46145000B190A /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E5EE34F11EF41C36000B190A /* Project object */;
 }
