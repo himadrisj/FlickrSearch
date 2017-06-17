@@ -57,6 +57,7 @@ final class ImageSearchController {
             
             
             DispatchQueue.main.async {
+                self.currentPage += 1
                 completiononMainThread(true, imageList, nil)
             }
         }
