@@ -10,6 +10,6 @@ import Foundation
 import CoreData
 import BNRCoreDataStack
 
-class SearchData: NSManagedObject, CoreDataModelable {
+final class SearchData: NSManagedObject, CoreDataModelable {
     static var entityName: String { return "SearchData" }
 }

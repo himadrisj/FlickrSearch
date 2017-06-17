@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings - English
+*/
+
+
+"search.placeholder" = "Search text...";
+"url.extraction.failed" = "Can't extract URLs from response";
+"failed.fetch.data" = "Failed to fetch image data";
+"no.results.found" = "No results found";
+
+

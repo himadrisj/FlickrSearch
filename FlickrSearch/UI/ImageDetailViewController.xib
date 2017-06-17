@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageDetailViewController" customModule="FlickrSearch" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="FDL-KA-8ge" id="Kt8-5l-QBc"/>
+                <outlet property="loaderView" destination="7Kw-3H-Ls5" id="VTy-lz-G0j"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FDL-KA-8ge">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="7Kw-3H-Ls5">
+                    <rect key="frame" x="169" y="315" width="37" height="37"/>
+                    <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="FDL-KA-8ge" secondAttribute="bottom" id="O41-NO-c3J"/>
+                <constraint firstItem="FDL-KA-8ge" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="efl-PA-wot"/>
+                <constraint firstAttribute="trailing" secondItem="FDL-KA-8ge" secondAttribute="trailing" id="hlh-1e-4YV"/>
+                <constraint firstItem="7Kw-3H-Ls5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hme-YU-9xR"/>
+                <constraint firstItem="FDL-KA-8ge" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ioy-cR-F7h"/>
+                <constraint firstItem="7Kw-3H-Ls5" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="zZE-pc-AdR"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+</document>

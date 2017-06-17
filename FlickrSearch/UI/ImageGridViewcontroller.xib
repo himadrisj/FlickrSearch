@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageGridViewcontroller" customModule="FlickrSearch" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="nh9-R8-eqD" id="zUb-FR-ptg"/>
+                <outlet property="collectionViewLayout" destination="kPN-GH-eza" id="EvA-fV-uuO"/>
+                <outlet property="loadingView" destination="QaQ-i9-Lwh" id="rbk-BJ-fSx"/>
+                <outlet property="noResultLabel" destination="Xwd-05-0yw" id="BrG-vp-s5w"/>
+                <outlet property="recentTextTableView" destination="wmr-Bl-9Zt" id="oYR-JE-Xzy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="nh9-R8-eqD">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kPN-GH-eza">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wmr-Bl-9Zt">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QaQ-i9-Lwh">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Ool-1D-L5V">
+                            <rect key="frame" x="178" y="324" width="20" height="20"/>
+                        </activityIndicatorView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fetching image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8s-df-ouF">
+                            <rect key="frame" x="128.5" y="352" width="118" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="u8s-df-ouF" firstAttribute="top" secondItem="Ool-1D-L5V" secondAttribute="bottom" constant="8" id="E9o-E9-xto"/>
+                        <constraint firstItem="u8s-df-ouF" firstAttribute="centerX" secondItem="QaQ-i9-Lwh" secondAttribute="centerX" id="QeL-BF-MB6"/>
+                        <constraint firstItem="Ool-1D-L5V" firstAttribute="centerY" secondItem="QaQ-i9-Lwh" secondAttribute="centerY" id="TUE-LO-oxu"/>
+                        <constraint firstItem="Ool-1D-L5V" firstAttribute="centerX" secondItem="QaQ-i9-Lwh" secondAttribute="centerX" id="sef-E0-WzL"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Images" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xwd-05-0yw">
+                    <rect key="frame" x="146" y="323" width="82" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="QaQ-i9-Lwh" secondAttribute="trailing" id="26o-r8-F9h"/>
+                <constraint firstItem="QaQ-i9-Lwh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7VB-hl-Gae"/>
+                <constraint firstAttribute="bottom" secondItem="wmr-Bl-9Zt" secondAttribute="bottom" id="Dkw-3k-rQN"/>
+                <constraint firstAttribute="trailing" secondItem="nh9-R8-eqD" secondAttribute="trailing" id="Hc6-bf-NHW"/>
+                <constraint firstAttribute="bottom" secondItem="QaQ-i9-Lwh" secondAttribute="bottom" id="QFa-5U-sAW"/>
+                <constraint firstItem="nh9-R8-eqD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="T6s-8q-2CB"/>
+                <constraint firstAttribute="bottom" secondItem="nh9-R8-eqD" secondAttribute="bottom" id="Wd7-LQ-cn0"/>
+                <constraint firstItem="Xwd-05-0yw" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Wl4-Gu-ZLK"/>
+                <constraint firstItem="wmr-Bl-9Zt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Wvk-qm-E7B"/>
+                <constraint firstItem="Xwd-05-0yw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="acN-xX-j7S"/>
+                <constraint firstAttribute="trailing" secondItem="wmr-Bl-9Zt" secondAttribute="trailing" id="fag-Fb-9eg"/>
+                <constraint firstItem="QaQ-i9-Lwh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sxS-3M-zkx"/>
+                <constraint firstItem="nh9-R8-eqD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="tLv-GD-pHz"/>
+                <constraint firstItem="wmr-Bl-9Zt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="x1A-8O-q3r"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+</document>

@@ -11,10 +11,7 @@
 		90B80ADCE9B939177045FF40 /* Pods_FlickrSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B415184B9AB19B90218F56A8 /* Pods_FlickrSearch.framework */; };
 		A0605D7CAF26439F14F63A28 /* Pods_FlickrSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB874EAE8AAB63A5385C4124 /* Pods_FlickrSearchTests.framework */; };
 		E5EE34FD1EF41C36000B190A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE34FC1EF41C36000B190A /* AppDelegate.swift */; };
-		E5EE34FF1EF41C36000B190A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE34FE1EF41C36000B190A /* ViewController.swift */; };
-		E5EE35021EF41C36000B190A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5EE35001EF41C36000B190A /* Main.storyboard */; };
 		E5EE35041EF41C36000B190A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5EE35031EF41C36000B190A /* Assets.xcassets */; };
-		E5EE35071EF41C36000B190A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5EE35051EF41C36000B190A /* LaunchScreen.storyboard */; };
 		E5EE351D1EF41C36000B190A /* FlickrSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE351C1EF41C36000B190A /* FlickrSearchUITests.swift */; };
 		E5EE352C1EF42BA7000B190A /* NetworkLayerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE352B1EF42BA7000B190A /* NetworkLayerProtocols.swift */; };
 		E5EE352E1EF42BF3000B190A /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE352D1EF42BF3000B190A /* NetworkConstants.swift */; };
@@ -32,6 +29,18 @@
 		E5EE354F1EF46145000B190A /* SearchData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE35471EF46145000B190A /* SearchData+CoreDataProperties.swift */; };
 		E5EE35501EF46145000B190A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E5EE35491EF46145000B190A /* Model.xcdatamodeld */; };
 		E5EE35531EF461F8000B190A /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE35521EF461F8000B190A /* UIConstants.swift */; };
+		E5EE35561EF512D6000B190A /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE35551EF512D6000B190A /* CoreDataHelper.swift */; };
+		E5EE355E1EF51306000B190A /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE35571EF51306000B190A /* ImageCollectionViewCell.swift */; };
+		E5EE355F1EF51306000B190A /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5EE35581EF51306000B190A /* ImageCollectionViewCell.xib */; };
+		E5EE35601EF51306000B190A /* ImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE35591EF51306000B190A /* ImageDetailViewController.swift */; };
+		E5EE35611EF51306000B190A /* ImageDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5EE355A1EF51306000B190A /* ImageDetailViewController.xib */; };
+		E5EE35621EF51306000B190A /* ImageGridViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE355B1EF51306000B190A /* ImageGridViewcontroller.swift */; };
+		E5EE35631EF51306000B190A /* ImageGridViewcontroller.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5EE355C1EF51306000B190A /* ImageGridViewcontroller.xib */; };
+		E5EE35641EF51306000B190A /* ImageUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE355D1EF51306000B190A /* ImageUrls.swift */; };
+		E5EE35671EF51367000B190A /* ImageSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE35651EF51367000B190A /* ImageSearchController.swift */; };
+		E5EE35681EF51367000B190A /* PrincipalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE35661EF51367000B190A /* PrincipalController.swift */; };
+		E5EE356D1EF514E2000B190A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5EE35691EF514E2000B190A /* LaunchScreen.storyboard */; };
+		E5EE356E1EF514E2000B190A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E5EE356B1EF514E2000B190A /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,10 +69,7 @@
 		CCD9C8BBDBE1F54480177953 /* Pods-FlickrSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickrSearchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlickrSearchTests/Pods-FlickrSearchTests.release.xcconfig"; sourceTree = "<group>"; };
 		E5EE34F91EF41C36000B190A /* FlickrSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickrSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5EE34FC1EF41C36000B190A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E5EE34FE1EF41C36000B190A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E5EE35011EF41C36000B190A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E5EE35031EF41C36000B190A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E5EE35061EF41C36000B190A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5EE35081EF41C36000B190A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5EE350D1EF41C36000B190A /* FlickrSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickrSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5EE35131EF41C36000B190A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,7 +77,7 @@
 		E5EE351C1EF41C36000B190A /* FlickrSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrSearchUITests.swift; sourceTree = "<group>"; };
 		E5EE351E1EF41C36000B190A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5EE352B1EF42BA7000B190A /* NetworkLayerProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLayerProtocols.swift; sourceTree = "<group>"; };
-		E5EE352D1EF42BF3000B190A /* NetworkConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkConstants.swift; path = ../NetworkConstants.swift; sourceTree = "<group>"; };
+		E5EE352D1EF42BF3000B190A /* NetworkConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
 		E5EE352F1EF42C2D000B190A /* StrictMappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrictMappable.swift; sourceTree = "<group>"; };
 		E5EE35311EF42C60000B190A /* GenericResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericResponseHandler.swift; sourceTree = "<group>"; };
 		E5EE35341EF42CA7000B190A /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
@@ -86,6 +92,18 @@
 		E5EE35471EF46145000B190A /* SearchData+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SearchData+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		E5EE354A1EF46145000B190A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		E5EE35521EF461F8000B190A /* UIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
+		E5EE35551EF512D6000B190A /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		E5EE35571EF51306000B190A /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		E5EE35581EF51306000B190A /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		E5EE35591EF51306000B190A /* ImageDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
+		E5EE355A1EF51306000B190A /* ImageDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageDetailViewController.xib; sourceTree = "<group>"; };
+		E5EE355B1EF51306000B190A /* ImageGridViewcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageGridViewcontroller.swift; sourceTree = "<group>"; };
+		E5EE355C1EF51306000B190A /* ImageGridViewcontroller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageGridViewcontroller.xib; sourceTree = "<group>"; };
+		E5EE355D1EF51306000B190A /* ImageUrls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUrls.swift; sourceTree = "<group>"; };
+		E5EE35651EF51367000B190A /* ImageSearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSearchController.swift; sourceTree = "<group>"; };
+		E5EE35661EF51367000B190A /* PrincipalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrincipalController.swift; sourceTree = "<group>"; };
+		E5EE356A1EF514E2000B190A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = FlickrSearch/en.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		E5EE356C1EF514E2000B190A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = FlickrSearch/en.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
 		E8C6CE129E5E9814A961AABB /* Pods-FlickrSearchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickrSearchUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlickrSearchUITests/Pods-FlickrSearchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EB874EAE8AAB63A5385C4124 /* Pods_FlickrSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlickrSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F680A9DF391C53404614C15D /* Pods-FlickrSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickrSearchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlickrSearchTests/Pods-FlickrSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -167,14 +185,14 @@
 		E5EE34FB1EF41C36000B190A /* FlickrSearch */ = {
 			isa = PBXGroup;
 			children = (
+				E5EE35541EF469BE000B190A /* Controller */,
 				E5EE35511EF461E2000B190A /* UI */,
 				E5EE35401EF460FC000B190A /* CoreData */,
 				E5EE352A1EF42B49000B190A /* NetworkLayer */,
+				E5EE35691EF514E2000B190A /* LaunchScreen.storyboard */,
+				E5EE356B1EF514E2000B190A /* Localizable.strings */,
 				E5EE34FC1EF41C36000B190A /* AppDelegate.swift */,
-				E5EE34FE1EF41C36000B190A /* ViewController.swift */,
-				E5EE35001EF41C36000B190A /* Main.storyboard */,
 				E5EE35031EF41C36000B190A /* Assets.xcassets */,
-				E5EE35051EF41C36000B190A /* LaunchScreen.storyboard */,
 				E5EE35081EF41C36000B190A /* Info.plist */,
 			);
 			path = FlickrSearch;
@@ -204,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				E5EE35331EF42C8F000B190A /* ApiModel */,
+				E5EE352D1EF42BF3000B190A /* NetworkConstants.swift */,
 				E5EE352B1EF42BA7000B190A /* NetworkLayerProtocols.swift */,
 				E5EE352F1EF42C2D000B190A /* StrictMappable.swift */,
 				E5EE35311EF42C60000B190A /* GenericResponseHandler.swift */,
@@ -216,7 +235,6 @@
 		E5EE35331EF42C8F000B190A /* ApiModel */ = {
 			isa = PBXGroup;
 			children = (
-				E5EE352D1EF42BF3000B190A /* NetworkConstants.swift */,
 				E5EE35381EF42CFD000B190A /* GetImageListRequestModels.swift */,
 			);
 			path = ApiModel;
@@ -225,6 +243,7 @@
 		E5EE35401EF460FC000B190A /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				E5EE35551EF512D6000B190A /* CoreDataHelper.swift */,
 				E5EE35421EF46145000B190A /* Models */,
 			);
 			name = CoreData;
@@ -263,8 +282,24 @@
 			isa = PBXGroup;
 			children = (
 				E5EE35521EF461F8000B190A /* UIConstants.swift */,
+				E5EE35571EF51306000B190A /* ImageCollectionViewCell.swift */,
+				E5EE35581EF51306000B190A /* ImageCollectionViewCell.xib */,
+				E5EE35591EF51306000B190A /* ImageDetailViewController.swift */,
+				E5EE355A1EF51306000B190A /* ImageDetailViewController.xib */,
+				E5EE355B1EF51306000B190A /* ImageGridViewcontroller.swift */,
+				E5EE355C1EF51306000B190A /* ImageGridViewcontroller.xib */,
+				E5EE355D1EF51306000B190A /* ImageUrls.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		E5EE35541EF469BE000B190A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E5EE35651EF51367000B190A /* ImageSearchController.swift */,
+				E5EE35661EF51367000B190A /* PrincipalController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,7 +403,6 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
 			mainGroup = E5EE34F01EF41C36000B190A;
 			productRefGroup = E5EE34FA1EF41C36000B190A /* Products */;
@@ -387,9 +421,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5EE35071EF41C36000B190A /* LaunchScreen.storyboard in Resources */,
+				E5EE35611EF51306000B190A /* ImageDetailViewController.xib in Resources */,
+				E5EE356E1EF514E2000B190A /* Localizable.strings in Resources */,
 				E5EE35041EF41C36000B190A /* Assets.xcassets in Resources */,
-				E5EE35021EF41C36000B190A /* Main.storyboard in Resources */,
+				E5EE355F1EF51306000B190A /* ImageCollectionViewCell.xib in Resources */,
+				E5EE356D1EF514E2000B190A /* LaunchScreen.storyboard in Resources */,
+				E5EE35631EF51306000B190A /* ImageGridViewcontroller.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,11 +590,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5EE355E1EF51306000B190A /* ImageCollectionViewCell.swift in Sources */,
 				E5EE352E1EF42BF3000B190A /* NetworkConstants.swift in Sources */,
 				E5EE35501EF46145000B190A /* Model.xcdatamodeld in Sources */,
-				E5EE34FF1EF41C36000B190A /* ViewController.swift in Sources */,
+				E5EE35561EF512D6000B190A /* CoreDataHelper.swift in Sources */,
 				E5EE354E1EF46145000B190A /* SearchData+CoreDataClass.swift in Sources */,
 				E5EE35371EF42CDB000B190A /* FlickrService.swift in Sources */,
+				E5EE35641EF51306000B190A /* ImageUrls.swift in Sources */,
+				E5EE35621EF51306000B190A /* ImageGridViewcontroller.swift in Sources */,
+				E5EE35671EF51367000B190A /* ImageSearchController.swift in Sources */,
+				E5EE35681EF51367000B190A /* PrincipalController.swift in Sources */,
+				E5EE35601EF51306000B190A /* ImageDetailViewController.swift in Sources */,
 				E5EE354F1EF46145000B190A /* SearchData+CoreDataProperties.swift in Sources */,
 				E5EE35531EF461F8000B190A /* UIConstants.swift in Sources */,
 				E5EE35391EF42CFD000B190A /* GetImageListRequestModels.swift in Sources */,
@@ -604,20 +647,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E5EE35001EF41C36000B190A /* Main.storyboard */ = {
+		E5EE35691EF514E2000B190A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E5EE35011EF41C36000B190A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E5EE35051EF41C36000B190A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E5EE35061EF41C36000B190A /* Base */,
+				E5EE356A1EF514E2000B190A /* en */,
 			);
 			name = LaunchScreen.storyboard;
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		E5EE356B1EF514E2000B190A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5EE356C1EF514E2000B190A /* en */,
+			);
+			name = Localizable.strings;
+			path = NetworkLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
