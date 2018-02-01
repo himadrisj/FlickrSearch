@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 struct UIConstant {
-    static let appThemeColor =  UIColor(colorLiteralRed: 0.0/255, green: 85.0/255, blue: 218.0/255, alpha: 1.0)
+    static let appThemeColor =  UIColor(red: 0.0/255, green: 85.0/255, blue: 218.0/255, alpha: 1.0)
     static let maxRecentSearchCount = 6
     static let itemPerPage = 20
 }
