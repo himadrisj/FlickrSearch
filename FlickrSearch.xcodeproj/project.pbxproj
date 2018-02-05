@@ -8,11 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3179179893219730074D50D3 /* Pods_FlickrSearchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042E0F245D512CB8F8A79222 /* Pods_FlickrSearchUITests.framework */; };
-		52267B62202326530008429E /* Analytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52267B61202326530008429E /* Analytics.framework */; };
-		52267B632023265D0008429E /* Analytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52267B61202326530008429E /* Analytics.framework */; };
-		52267B642023265D0008429E /* Analytics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52267B61202326530008429E /* Analytics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		90B80ADCE9B939177045FF40 /* Pods_FlickrSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B415184B9AB19B90218F56A8 /* Pods_FlickrSearch.framework */; };
 		A0605D7CAF26439F14F63A28 /* Pods_FlickrSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB874EAE8AAB63A5385C4124 /* Pods_FlickrSearchTests.framework */; };
+		E5AFCB97202809440027C382 /* Analytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52267B61202326530008429E /* Analytics.framework */; };
+		E5AFCB98202809440027C382 /* Analytics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52267B61202326530008429E /* Analytics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E5EE34FD1EF41C36000B190A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE34FC1EF41C36000B190A /* AppDelegate.swift */; };
 		E5EE35041EF41C36000B190A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5EE35031EF41C36000B190A /* Assets.xcassets */; };
 		E5EE351D1EF41C36000B190A /* FlickrSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE351C1EF41C36000B190A /* FlickrSearchUITests.swift */; };
@@ -64,13 +63,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		52267B652023265D0008429E /* Embed Frameworks */ = {
+		E5AFCB99202809450027C382 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				52267B642023265D0008429E /* Analytics.framework in Embed Frameworks */,
+				E5AFCB98202809440027C382 /* Analytics.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,8 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				90B80ADCE9B939177045FF40 /* Pods_FlickrSearch.framework in Frameworks */,
-				52267B62202326530008429E /* Analytics.framework in Frameworks */,
-				52267B632023265D0008429E /* Analytics.framework in Frameworks */,
+				E5AFCB97202809440027C382 /* Analytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,7 +342,7 @@
 				E5EE34F71EF41C36000B190A /* Resources */,
 				9AB0EFCFF827B1D42EED88F7 /* [CP] Embed Pods Frameworks */,
 				EF7D23F2106E34CAA693DE6C /* [CP] Copy Pods Resources */,
-				52267B652023265D0008429E /* Embed Frameworks */,
+				E5AFCB99202809450027C382 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

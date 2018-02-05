@@ -1,0 +1,5 @@
+https://github.com/Hearst-DD/ObjectMapper
+
+Version: 3.0.0
+
+
